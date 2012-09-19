@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+require 'pjson'
+
+begin
+  puts PJson.new(STDIN.gets)
+rescue Object => e
+  puts "#{e.message}\n#{e.backtrace}"
+end
